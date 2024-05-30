@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Open Mind Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/Group 6 - LOGO (1).png" alt="">
+        <div class="logo">THE OPEN MIND PROJECT</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="messages.html"><b>Support</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>How are you feeling?</h1>
+            <p>This is a safe space.</p>
+            <form onsubmit="return reply();">
+                <label for="thoughts"></label></br>
+                <textarea id="thoughts" name="thoughts" placeholder="Type here..." rows="7" column="100" required></textarea></br>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+            <div id="pic">
+            <img src="images/kamot.png" width="700" height="720">
+                </div>
+        </div>
+    </main>
+    <div id="foot">
+        Contacts:
+      National Center for Mental Health (NCMH) 
+
+            1553 (nationwide and toll-free landline)
+            099663514518 (Globe/TM) 
+            09178998727 (Globe/TM) 
+            09096392672 (Smart/Sun/TM) 
+            
+            Hopeline PH 
+            09175584673 (Globe) 
+            09188734673 (Smart) 
+            8804-4673 (PLDT) 
+            2919 (toll-free Globe/TM)
+            
+</div>
+    <script>
+       function reply(){
+            const messages = [
+                "There's more joy and more life for you to experience. Don't give up, please. It is going to be okay.",
+                "We're proud of you for making it through your hardest days! It might not be easy, but we will always get through it. Sending virtual hugs ⊂⁠(⁠•⁠‿⁠•⁠⊂⁠ ⁠)⁠*⁠.⁠✧",
+                "Ohmy I like ur smile!! Please do it more often and never underestimate the power your smile holds as it could be the sunshine that someone needs on a cloudy day. (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)",
+                "Remember that there is always rainbows and sunshine after the rain. So, no matter how tough today may seem, we're proud of you for surviving, and tomorrow is definitely going to be a better day. :D",
+                "Remember, it's okay to have difficult days, and you don't have to go through them alone. You are cared for deeply, and I'm here for you whenever you need to talk or just have someone listen. Take it one step at a time, and know that brighter days are ahead. I believe in YOU! <33",
+                "Just wanted to remind you how amazing you are! Your strength and positivity are truly inspiring. Keep shining bright—better days are just around the corner.",
+                "I just wanted to remind you that you are capable of amazing things. Don't let today's worries dim your bright future. You are stronger than you know.",
+                "I hope this message brightens your day a bit. Remember, even on tough days, your strength and kindness make a big difference. Keep your head up and know that better times are ahead.",
+                "Take a deep breath and let go of any worries or fears that may be weighing you down. You are doing the best you can, and that is something to be proud of.",
+                "Keep going, even when it feels tough. You are stronger than you think, and you will get through this. And when you do, you'll emerge even stronger, wiser, and more resilient. Be gentle with yourself, and remember that it's okay to make mistakes. You are human, and that's what makes you beautiful.",
+                "Life can be unpredictable and chaotic at times, but you are strong and capable of handling whatever comes your way. You are resilient, and you have the power to rise above anything that life throws your way."
+            ];
+
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            window.alert(messages[randomIndex]);
+            return false; 
+        }
+</script>
+</body>
+</html>
